@@ -11,7 +11,7 @@ module ShopifyApp
     private
 
     def splash_page
-      splash_page_with_params(shop: current_shopify_domain, host: params[:host])
+      splash_page_with_params(shop: current_shopify_domain, host: @host)
     end
 
     def base_splash_page
