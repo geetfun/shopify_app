@@ -16,7 +16,7 @@
     }
   </style>
 
-  <%= javascript_include_tag('shopify_app/top_level', crossorigin: 'anonymous', integrity: true) %>
+  <%= javascript_include_tag('shopify_app/top_level', crossorigin: 'anonymous') %>
 </head>
 <body data-api-key="<%= ShopifyApp.configuration.api_key %>" data-shop-origin="https://<%= @shop %>" data-redirect-url="<%= @url %>">
   <main id="TopLevelInteractionContent">
