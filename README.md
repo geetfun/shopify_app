@@ -1,19 +1,22 @@
 # Shopify App
 
-**Shopify is doubling our engineering staff in 2021! [Join our team and work on libraries like this one.](https://smrtr.io/5GGrK)**
+This is the community fork of the [official Shopify App gem](https://github.com/Shopify/shopify_app). I maintain it as the official gem seems to be abandoned since May 2021. Any contribution is very welcome! ❤️
 
-[![Version][gem]][gem_url] [![Build Status](https://github.com/Shopify/shopify_app/workflows/CI/badge.svg)](https://github.com/Shopify/shopify_app/actions?query=workflow%3ACI) ![Supported Rails version][supported_rails_version]
+**Differences with official gem:**
+- Supported Ruby 3.0
+- Fully compatible with AppBridge 2.0
+- Improvements for JWT & Turbo integration
 
-[gem]: https://img.shields.io/gem/v/shopify_app.svg
-[gem_url]: https://rubygems.org/gems/shopify_app
-[supported_rails_version]: https://img.shields.io/badge/rails-%3C6.2.0-orange
+Sample embedded app with JWT, Turbo, AppBridge 2.0, and Polaris ViewComponent: https://github.com/kirillplatonov/shopify-hotwire-sample
+
+## README
 
 This gem builds Rails applications that can be embedded in the Shopify Admin.
 
-[Introduction](#introduction) | 
-[Requirements](#requirements) | 
-[Usage](#usage) | 
-[Documentation](#documentation) | 
+[Introduction](#introduction) |
+[Requirements](#requirements) |
+[Usage](#usage) |
+[Documentation](#documentation) |
 [Contributing](/CONTRIBUTING.md) |
 [License](/LICENSE)
 
@@ -24,15 +27,15 @@ This gem includes a Rails engine, generators, modules, and mixins that help crea
 <!-- This section is linked to in `templates/shopify_app.rb.tt`. Be careful renaming this heading. -->
 ## Requirements
 
-> **Rails compatibility** 
+> **Rails compatibility**
 > * Use Shopify App `<= v7.2.8` if you need to work with Rails 4.
 
 To become a Shopify app developer, you will need a [Shopify Partners](https://www.shopify.com/partners) account. Explore the [Shopify dev docs](https://shopify.dev/concepts/shopify-introduction) to learn more about [building Shopify apps](https://shopify.dev/concepts/apps).
 
 This gem requires that you have the following credentials:
 
-- **Shopify API key:** The API key app credential specified in your [Shopify Partners dashboard](https://partners.shopify.com/organizations). 
-- **Shopify API secret:** The API secret key app credential specified in your [Shopify Partners dashboard](https://partners.shopify.com/organizations). 
+- **Shopify API key:** The API key app credential specified in your [Shopify Partners dashboard](https://partners.shopify.com/organizations).
+- **Shopify API secret:** The API secret key app credential specified in your [Shopify Partners dashboard](https://partners.shopify.com/organizations).
 
 ## Usage
 
@@ -55,7 +58,7 @@ SHOPIFY_API_KEY=<Your Shopify API key>
 SHOPIFY_API_SECRET=<Your Shopify API secret>
 ```
 
-> In a development environment, you can use a gem like `dotenv-rails` to manage environment variables. 
+> In a development environment, you can use a gem like `dotenv-rails` to manage environment variables.
 
 4. Run the default Shopify App generator to create an app that can be embedded in the Shopify Admin:
 
