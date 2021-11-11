@@ -3,7 +3,8 @@
 This is the community fork of the [official Shopify App gem](https://github.com/Shopify/shopify_app). I maintain it as the official gem seems to be abandoned since May 2021. Any contribution is very welcome! ❤️
 
 **Differences with official gem:**
-- Supported Ruby 3.0
+- Ruby 3.0 supported
+- Rails 7.0 supported
 - Fully compatible with AppBridge 2.0
 - Improvements for JWT & Turbo integration
 
